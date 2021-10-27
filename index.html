@@ -11,15 +11,18 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
 
-    <title>Portfolio Enjel</title>
+    <title>CV | Enjel</title>
   </head>
   <body id="home">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #a483ff">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
         <a class="navbar-brand" href="#">Enjltsr</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,11 +46,12 @@
       </div>
     </nav>
     <!-- Akhir Navbar -->
+
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="enjel.jpeg" alt="Enjelita" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Enjelita Sari</h1>
-      <p class="lead">Mahasiswa Universitas Jenderal Soedirman</p>
+      <img src="enjel.jpeg" alt="Enjelita" width="200" class="rounded-circle img-thumbnail" data-aos="fade-in" data-aos-duration="3000"/>
+      <h1 class="display-4" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200">Enjelita Sari</h1>
+      <p class="lead" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400">Mahasiswa Universitas Jenderal Soedirman</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#b19af1"
@@ -62,15 +66,18 @@
     <section id="about" style="background-color: #b19af1">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" data-aos="fade-up"
+          data-aos-duration="2000">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right"
+          data-aos-duration="3000" data-aos-delay="300">
             Perkenalkan nama saya Enjelita Sari atau biasa dipanggil Enjel, saya bertempat tinggal di Banyumas, Jawa Tengah. Saya merupakan salah satu mahasiswa Informatika angkatan 2020 Universitas Jenderal Soedirman.
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left"
+          data-aos-duration="3000" data-aos-delay="500">
             Saya mengikuti organisasi Himpunan Mahasiswa Informatika Universitas Jenderal Soedirman bagian divisi Keilmuan dan Teknologi. Saya diberi tugas untuk menjalankan sebuah program kerja Workshop Machine Learning
           </div>
         </div>
@@ -89,14 +96,16 @@
     <section id="skill" style="background-color: #a186eb">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <h2>Skill</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center mb-3">
-          <div class="col">
-            Saya memiliki beberapa keahlian yaitu menguasai dasar bahasa pemrogramman C, C++, SQL, dan Java. Saya juga dapat melakukan public speaking dengan baik dan dapat berbicara dalam beberapa bahasa seperti Bahasa Jawa, Bahasa Indonesia, dan Bahasa Inggris, saya juga dapat sedikit berkomunikasi
-            dengan menggunakan Bahasa Jepang dan Bahasa Korea dan masih dalam tahap pengembangan.
+          <div class="col" data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
+            Saya memiliki beberapa keahlian yaitu menguasai dasar bahasa pemrogramman C, C++, SQL, dan Java. Saya juga dapat melakukan public speaking dengan baik dan dapat berbicara dalam beberapa bahasa seperti Bahasa Jawa, Bahasa
+            Indonesia, Bahasa Inggris, dan saya bisa berkomunikasi Bahasa Jepang dan Bahasa Korea dan masih dalam tahap pengembangan.
           </div>
         </div>
       </div>
@@ -113,14 +122,14 @@
     <!-- Project -->
     <section id="certificate" style="background-color: #8f77da">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3" data-aos="fade-up">
           <div class="col">
             <h2>Certificate</h2>
           </div>
         </div>
         <div class="row mb-3">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
               <img src="Workshop.jpg" class="card-img-top" alt="P1" />
               <div class="card-body">
                 <p class="card-text">Workshop Machine Learning</p>
@@ -128,7 +137,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
               <img src="Pengmas.jpg" class="card-img-top" alt="P2" />
               <div class="card-body">
                 <p class="card-text">Pengabdian Masyarakat</p>
@@ -136,7 +145,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
               <img src="Literasi.jpg" class="card-img-top" alt="P3" />
               <div class="card-body">
                 <p class="card-text">Literasi Digital Nasional</p>
@@ -146,7 +155,7 @@
         </div>
         <div class="row justify-content-center mb-3">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
               <img src="cpp.jpg" class="card-img-top" alt="P" />
               <div class="card-body">
                 <p class="card-text">C++</p>
@@ -154,7 +163,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
               <img src="IT.jpg" class="card-img-top" alt="PP" />
               <div class="card-body">
                 <p class="card-text">IT Basic</p>
@@ -182,6 +191,12 @@
       <a href="https://wa.me/6285700432044" target="_blank"><i class="bi bi-whatsapp text-white"></i></i></a>
     </footer>
     <!-- akhir footer -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
