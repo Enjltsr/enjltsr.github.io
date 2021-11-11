@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Validasi</title>
+  </head>
+  <body>
+    <form>
+      <p>Nama : <input type="text" name="nama" id="nama" /></p>
+      <p>No. Telp : <input type="number" name="telp" id="telp" /></p>
+      <p>Email : <input type="email" name="email" id="email" /></p>
+      <p><input type="submit" onClick="validasi()" value="Submit" /></p>
+    </form>
+    <script>
+      // Nama
+      function Alphabet(nilai, pesan) {
+        var alphaExp = /^[a-zA-Z]+$/;
+        if (nilai.value.match(alphaExp)) {
+          return true;
+        } else {
+          alert(pesan);
+          nilai.focus();
+          return false;
+        }
+      }
+
+      //   no telp
+      function Number(nilai, pesan) {
+        var numberExp = /^[0-9]+$/;
+        if (nilai.value.match(numberExp)) {
+          return true;
+        } else {
+          alert(pesan);
+          nilai.focus();
+          return false;
+        }
+      }
+
+      //   email
+      function cekEmail(nilai, pesan) {
+        var email = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+        if (nilai.value.match(email)) {
+          return true;
+        } else {
+          alert(pesan);
+          nilai.focus();
+          return false;
+        }
+      }
+
+      // validasi
+      function validasi() {
+        Alphabet(document.getElementById("nama"), "Nama harus Huruf semua!!");
+        Number(document.getElementById("telp"), "Telp. hanya ber isi Number!!");
+        cekEmail(document.getElementById("email"), "Email tidak benar!!");
+      }
+    </script>
+  </body>
+</html>
